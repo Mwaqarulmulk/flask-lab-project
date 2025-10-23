@@ -1,0 +1,118 @@
+smoke	Set up job	﻿2025-10-23T09:20:06.3553343Z Current runner version: '2.329.0'
+smoke	Set up job	2025-10-23T09:20:06.3579467Z ##[group]Runner Image Provisioner
+smoke	Set up job	2025-10-23T09:20:06.3580294Z Hosted Compute Agent
+smoke	Set up job	2025-10-23T09:20:06.3580851Z Version: 20250912.392
+smoke	Set up job	2025-10-23T09:20:06.3581531Z Commit: d921fda672a98b64f4f82364647e2f10b2267d0b
+smoke	Set up job	2025-10-23T09:20:06.3582243Z Build Date: 2025-09-12T15:23:14Z
+smoke	Set up job	2025-10-23T09:20:06.3582816Z ##[endgroup]
+smoke	Set up job	2025-10-23T09:20:06.3583438Z ##[group]Operating System
+smoke	Set up job	2025-10-23T09:20:06.3583981Z Ubuntu
+smoke	Set up job	2025-10-23T09:20:06.3584523Z 24.04.3
+smoke	Set up job	2025-10-23T09:20:06.3584996Z LTS
+smoke	Set up job	2025-10-23T09:20:06.3585472Z ##[endgroup]
+smoke	Set up job	2025-10-23T09:20:06.3585972Z ##[group]Runner Image
+smoke	Set up job	2025-10-23T09:20:06.3586530Z Image: ubuntu-24.04
+smoke	Set up job	2025-10-23T09:20:06.3587099Z Version: 20250929.60.1
+smoke	Set up job	2025-10-23T09:20:06.3588449Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250929.60/images/ubuntu/Ubuntu2404-Readme.md
+smoke	Set up job	2025-10-23T09:20:06.3589939Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250929.60
+smoke	Set up job	2025-10-23T09:20:06.3591110Z ##[endgroup]
+smoke	Set up job	2025-10-23T09:20:06.3592407Z ##[group]GITHUB_TOKEN Permissions
+smoke	Set up job	2025-10-23T09:20:06.3594483Z Contents: read
+smoke	Set up job	2025-10-23T09:20:06.3595077Z Metadata: read
+smoke	Set up job	2025-10-23T09:20:06.3595612Z Packages: read
+smoke	Set up job	2025-10-23T09:20:06.3596086Z ##[endgroup]
+smoke	Set up job	2025-10-23T09:20:06.3598215Z Secret source: Actions
+smoke	Set up job	2025-10-23T09:20:06.3599008Z Prepare workflow directory
+smoke	Set up job	2025-10-23T09:20:06.3915428Z Prepare all required actions
+smoke	Set up job	2025-10-23T09:20:06.3953883Z Getting action download info
+smoke	Set up job	2025-10-23T09:20:06.6948173Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+smoke	Set up job	2025-10-23T09:20:07.2730163Z Complete job name: smoke
+smoke	Checkout repository	﻿2025-10-23T09:20:07.3587110Z ##[group]Run actions/checkout@v4
+smoke	Checkout repository	2025-10-23T09:20:07.3588246Z with:
+smoke	Checkout repository	2025-10-23T09:20:07.3588764Z   repository: Mwaqarulmulk/flask-lab-project
+smoke	Checkout repository	2025-10-23T09:20:07.3589552Z   token: ***
+smoke	Checkout repository	2025-10-23T09:20:07.3589976Z   ssh-strict: true
+smoke	Checkout repository	2025-10-23T09:20:07.3590423Z   ssh-user: git
+smoke	Checkout repository	2025-10-23T09:20:07.3590868Z   persist-credentials: true
+smoke	Checkout repository	2025-10-23T09:20:07.3591399Z   clean: true
+smoke	Checkout repository	2025-10-23T09:20:07.3591859Z   sparse-checkout-cone-mode: true
+smoke	Checkout repository	2025-10-23T09:20:07.3592406Z   fetch-depth: 1
+smoke	Checkout repository	2025-10-23T09:20:07.3592887Z   fetch-tags: false
+smoke	Checkout repository	2025-10-23T09:20:07.3593333Z   show-progress: true
+smoke	Checkout repository	2025-10-23T09:20:07.3593791Z   lfs: false
+smoke	Checkout repository	2025-10-23T09:20:07.3594199Z   submodules: false
+smoke	Checkout repository	2025-10-23T09:20:07.3594693Z   set-safe-directory: true
+smoke	Checkout repository	2025-10-23T09:20:07.3595489Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:07.4761711Z Syncing repository: Mwaqarulmulk/flask-lab-project
+smoke	Checkout repository	2025-10-23T09:20:07.4763754Z ##[group]Getting Git version info
+smoke	Checkout repository	2025-10-23T09:20:07.4764641Z Working directory is '/home/runner/work/flask-lab-project/flask-lab-project'
+smoke	Checkout repository	2025-10-23T09:20:07.4765878Z [command]/usr/bin/git version
+smoke	Checkout repository	2025-10-23T09:20:07.5749158Z git version 2.51.0
+smoke	Checkout repository	2025-10-23T09:20:07.5777674Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:07.5791740Z Temporarily overriding HOME='/home/runner/work/_temp/2c721c05-781d-4e92-8495-82edd4965e89' before making global git config changes
+smoke	Checkout repository	2025-10-23T09:20:07.5794294Z Adding repository directory to the temporary git global config as a safe directory
+smoke	Checkout repository	2025-10-23T09:20:07.5805685Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/flask-lab-project/flask-lab-project
+smoke	Checkout repository	2025-10-23T09:20:07.5888269Z Deleting the contents of '/home/runner/work/flask-lab-project/flask-lab-project'
+smoke	Checkout repository	2025-10-23T09:20:07.5891282Z ##[group]Initializing the repository
+smoke	Checkout repository	2025-10-23T09:20:07.5896047Z [command]/usr/bin/git init /home/runner/work/flask-lab-project/flask-lab-project
+smoke	Checkout repository	2025-10-23T09:20:07.6915611Z hint: Using 'master' as the name for the initial branch. This default branch name
+smoke	Checkout repository	2025-10-23T09:20:07.6918944Z hint: is subject to change. To configure the initial branch name to use in all
+smoke	Checkout repository	2025-10-23T09:20:07.6921241Z hint: of your new repositories, which will suppress this warning, call:
+smoke	Checkout repository	2025-10-23T09:20:07.6922904Z hint:
+smoke	Checkout repository	2025-10-23T09:20:07.6924248Z hint: 	git config --global init.defaultBranch <name>
+smoke	Checkout repository	2025-10-23T09:20:07.6925688Z hint:
+smoke	Checkout repository	2025-10-23T09:20:07.6926900Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+smoke	Checkout repository	2025-10-23T09:20:07.6929182Z hint: 'development'. The just-created branch can be renamed via this command:
+smoke	Checkout repository	2025-10-23T09:20:07.6930659Z hint:
+smoke	Checkout repository	2025-10-23T09:20:07.6931438Z hint: 	git branch -m <name>
+smoke	Checkout repository	2025-10-23T09:20:07.6932357Z hint:
+smoke	Checkout repository	2025-10-23T09:20:07.6933658Z hint: Disable this message with "git config set advice.defaultBranchName false"
+smoke	Checkout repository	2025-10-23T09:20:07.6959828Z Initialized empty Git repository in /home/runner/work/flask-lab-project/flask-lab-project/.git/
+smoke	Checkout repository	2025-10-23T09:20:07.6977415Z [command]/usr/bin/git remote add origin https://github.com/Mwaqarulmulk/flask-lab-project
+smoke	Checkout repository	2025-10-23T09:20:07.7119920Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:07.7122681Z ##[group]Disabling automatic garbage collection
+smoke	Checkout repository	2025-10-23T09:20:07.7125321Z [command]/usr/bin/git config --local gc.auto 0
+smoke	Checkout repository	2025-10-23T09:20:07.7163962Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:07.7165892Z ##[group]Setting up auth
+smoke	Checkout repository	2025-10-23T09:20:07.7173675Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+smoke	Checkout repository	2025-10-23T09:20:07.7212829Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+smoke	Checkout repository	2025-10-23T09:20:07.9085559Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+smoke	Checkout repository	2025-10-23T09:20:07.9127639Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+smoke	Checkout repository	2025-10-23T09:20:07.9364414Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+smoke	Checkout repository	2025-10-23T09:20:07.9402342Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:07.9405862Z ##[group]Fetching the repository
+smoke	Checkout repository	2025-10-23T09:20:07.9425965Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c85d8db0c1d6d8f040d16a726c690414c30f62d4:refs/remotes/origin/main
+smoke	Checkout repository	2025-10-23T09:20:08.2488384Z From https://github.com/Mwaqarulmulk/flask-lab-project
+smoke	Checkout repository	2025-10-23T09:20:08.2492095Z  * [new ref]         c85d8db0c1d6d8f040d16a726c690414c30f62d4 -> origin/main
+smoke	Checkout repository	2025-10-23T09:20:08.2572213Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:08.2575492Z ##[group]Determining the checkout info
+smoke	Checkout repository	2025-10-23T09:20:08.2579249Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:08.2581578Z [command]/usr/bin/git sparse-checkout disable
+smoke	Checkout repository	2025-10-23T09:20:08.2665193Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+smoke	Checkout repository	2025-10-23T09:20:08.2696944Z ##[group]Checking out the ref
+smoke	Checkout repository	2025-10-23T09:20:08.2699877Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+smoke	Checkout repository	2025-10-23T09:20:08.2798556Z Switched to a new branch 'main'
+smoke	Checkout repository	2025-10-23T09:20:08.2802524Z branch 'main' set up to track 'origin/main'.
+smoke	Checkout repository	2025-10-23T09:20:08.2810438Z ##[endgroup]
+smoke	Checkout repository	2025-10-23T09:20:08.2842070Z [command]/usr/bin/git log -1 --format=%H
+smoke	Checkout repository	2025-10-23T09:20:08.2864536Z c85d8db0c1d6d8f040d16a726c690414c30f62d4
+smoke	Say hello	﻿2025-10-23T09:20:08.3117490Z ##[group]Run echo "CI smoke test: hello"
+smoke	Say hello	2025-10-23T09:20:08.3119365Z [36;1mecho "CI smoke test: hello"[0m
+smoke	Say hello	2025-10-23T09:20:08.3120982Z [36;1mecho "Repo: $GITHUB_REPOSITORY"[0m
+smoke	Say hello	2025-10-23T09:20:08.3162451Z shell: /usr/bin/bash -e {0}
+smoke	Say hello	2025-10-23T09:20:08.3163872Z ##[endgroup]
+smoke	Say hello	2025-10-23T09:20:08.3253539Z CI smoke test: hello
+smoke	Say hello	2025-10-23T09:20:08.3257751Z Repo: Mwaqarulmulk/flask-lab-project
+smoke	Post Checkout repository	﻿2025-10-23T09:20:08.3450079Z Post job cleanup.
+smoke	Post Checkout repository	2025-10-23T09:20:08.4440024Z [command]/usr/bin/git version
+smoke	Post Checkout repository	2025-10-23T09:20:08.4475782Z git version 2.51.0
+smoke	Post Checkout repository	2025-10-23T09:20:08.4524951Z Temporarily overriding HOME='/home/runner/work/_temp/34eb1d41-4d8f-4b09-bf69-b4a9362abc16' before making global git config changes
+smoke	Post Checkout repository	2025-10-23T09:20:08.4528845Z Adding repository directory to the temporary git global config as a safe directory
+smoke	Post Checkout repository	2025-10-23T09:20:08.4531629Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/flask-lab-project/flask-lab-project
+smoke	Post Checkout repository	2025-10-23T09:20:08.4566215Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+smoke	Post Checkout repository	2025-10-23T09:20:08.4598944Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+smoke	Post Checkout repository	2025-10-23T09:20:08.4865484Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+smoke	Post Checkout repository	2025-10-23T09:20:08.4886637Z http.https://github.com/.extraheader
+smoke	Post Checkout repository	2025-10-23T09:20:08.4900380Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+smoke	Post Checkout repository	2025-10-23T09:20:08.4933392Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+smoke	Complete job	﻿2025-10-23T09:20:08.5278825Z Cleaning up orphan processes
