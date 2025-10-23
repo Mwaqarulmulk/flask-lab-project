@@ -1,5 +1,3 @@
-name: CI/CD
-
 name: CI Smoke Test
 
 on:
@@ -10,6 +8,8 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Say hello
         run: |
           echo "CI smoke test: hello"
