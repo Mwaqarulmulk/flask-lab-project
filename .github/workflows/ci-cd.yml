@@ -1,21 +1,16 @@
 name: CI/CD
 
-name: CI Diagnostic
+name: CI Smoke Test
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  diag:
+  smoke:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Print environment
+      - name: Say hello
         run: |
-          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
-          echo "GITHUB_REPOSITORY_OWNER=${{ github.repository_owner }}"
-          echo "GITHUB_ACTOR=${{ github.actor }}"
-          python --version || echo 'python not found'
+          echo "CI smoke test: hello"
+          echo "Repo: $GITHUB_REPOSITORY"
