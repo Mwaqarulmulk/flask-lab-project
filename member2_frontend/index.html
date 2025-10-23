@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Flask Lab — Frontend</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flask Lab — Frontend</h1>
+
+      <section class="card">
+        <h2>Health Check</h2>
+        <div class="row">
+          <button id="health-btn">Check /health</button>
+          <span id="health-res" class="muted">unknown</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Send JSON to /data</h2>
+        <form id="data-form">
+          <label for="json-input">JSON payload</label>
+          <textarea id="json-input">{"message": "hello from frontend"}</textarea>
+          <div class="row">
+            <button type="submit">Send</button>
+            <button type="button" id="pretty-btn">Pretty example</button>
+          </div>
+        </form>
+        <h3>Response</h3>
+        <pre id="resp">(no response yet)</pre>
+      </section>
+
+      <footer>
+        <small>Frontend served statically from <code>member2_frontend</code>. Designed to work with the Flask backend at <code>/data</code> and <code>/health</code>.</small>
+      </footer>
+    </div>
+
+    <script src="static/app.js"></script>
+  </body>
+}</html>
