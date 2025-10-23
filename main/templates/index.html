@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flask Lab Project</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flask Lab Project</h1>
+      <p>Health: <a href="/health">/health</a></p>
+
+      <h2>POST JSON to /data</h2>
+      <form id="data-form">
+        <textarea id="json-input" rows="6" cols="60">{"message": "hello"}</textarea><br>
+        <button type="submit">Send</button>
+      </form>
+
+      <pre id="resp"></pre>
+    </div>
+
+    <script>
+      document.getElementById('data-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const payload = JSON.parse(document.getElementById('json-input').value || '{}');
+        const res = await fetch('/data', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload) });
+        const txt = await res.json();
+        document.getElementById('resp').textContent = JSON.stringify(txt, null, 2);
+      });
+    </script>
+  </body>
+</html>
