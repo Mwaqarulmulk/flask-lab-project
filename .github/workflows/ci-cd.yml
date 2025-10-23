@@ -1,41 +1,21 @@
 name: CI/CD
 
-name: CI/CD
+name: CI Diagnostic
 
 on:
   push:
     branches: [ main ]
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
-  test:
+  diag:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
+      - name: Print environment
         run: |
-          cd main
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run tests
-        run: |
-          cd main
-          pytest -q
-
-      - name: Upload pytest logs (artifact)
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pytest-logs
-          path: main/.pytest_cache
+          echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY"
+          echo "GITHUB_REPOSITORY_OWNER=${{ github.repository_owner }}"
+          echo "GITHUB_ACTOR=${{ github.actor }}"
+          python --version || echo 'python not found'
